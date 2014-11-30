@@ -12,3 +12,4 @@ It also includes a stamina system and character fatigue. Over the course of a ba
 
 Enter the prompted numbers to navigate the menus and attack your enemies.
 
+<br><br><b>Known Bug:</b> If you use any save slot besides slot 1 for your character, the leveling up / experience system will not work properly. I will fix this as soon as I get time.
