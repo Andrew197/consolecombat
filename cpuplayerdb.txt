@@ -1,0 +1,20 @@
+Buckethead
+100 10 5 5 5 5
+ManBearPig
+150 12 5 5 5 5
+Rocketman
+100 10 15 5 5 5
+Golfer
+100 10 5 20 5 5
+RoboMallCop
+120 10 5 5 20 5
+Hogzilla
+200 20 10 10 10 10 
+Monkey Kong
+200 20 20 7 7 10 
+Twerp
+400 50 10 10 10 10
+Reaper
+500 30 30 30 20 20 
+Chuck Norris
+999 100 50 50 50 50

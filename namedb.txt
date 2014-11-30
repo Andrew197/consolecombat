@@ -1,0 +1,137 @@
+135
+Actor
+Agent
+Alcoholic
+American
+Analyst
+Anchorman
+Android
+Animator
+Announcer
+Asian
+Associate
+Attendant
+B. Fuddle
+Baconator
+Banker
+Barber
+Bartender
+Biker
+Blacksmith
+Blogger
+Block
+Bob-omb
+Bone head
+Boudreaux
+Bowler
+Broker
+Bureaucrat
+Butcher
+Cadet
+Canadian
+Carpetbagger
+Cashier
+Chef
+Clown
+Cone Head
+Cop
+Cranky
+Democrat
+Dentist
+Derp
+Dictator
+Director
+Doctor
+Donkey
+Dr. Horrible
+Driver
+Dumpington
+Editor
+Ed
+Engineer
+Ensign
+Executive
+Fanboy
+Fat cat
+Firefighter
+Fool
+Gangster
+General
+Ghost
+Giant
+Goat
+Goalie
+Governator
+Headhunter
+Hippie
+Hipster
+Hogzilla
+Hotshot
+Iron Chef
+Jouster
+Journalist
+Keylogger
+Knight
+Laffy Taffy
+Liar
+Libertarian
+Lieutenant
+Linebacker
+Loan Shark
+Locksmith
+Mall Cop
+Manager
+Mayor
+Mechanic
+Meteorologist
+Mexican
+Monkey Kong
+moron
+Nerd
+New Yorker
+Nurse
+Pilot
+Plumber
+Player
+Politician
+Prankster
+President
+Professor
+Programmer
+Quarterback
+Raider
+Reaper
+Redneck
+Republican
+Robot
+Rookie
+Sage
+Salesman
+Scientist
+Scooter
+Sheep
+Shoe Shiner
+Shopper
+Smuggler
+Socialite
+Specialist
+Spectre
+Stocker
+Surgeon
+Tard
+Technician
+Telemarketer
+Tester
+Texan
+Thwomp
+Towel
+Troll
+Trucker
+Twerp
+Veteran
+Wanderer
+Wanker
+Wall
+Wookiee
+WOrker
+Worker
