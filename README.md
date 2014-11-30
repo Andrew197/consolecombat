@@ -1,8 +1,7 @@
 consolecombat
 =============
 
-Turn based battle system with procedurally generated enemies and multiplayer<br><br><br>
-
+Turn based battle system with procedurally generated enemies and multiplayer<br>
 <a href="http://andrewpinion.com/img/cc1b.jpg"><img src="http://andrewpinion.com/img/cc1.jpg" width=200 height=150></a>
 <a href="http://andrewpinion.com/img/cc2b.jpg"><img src="http://andrewpinion.com/img/cc2.jpg" width=200 height=150></a>
 <a href="http://andrewpinion.com/img/cc3b.jpg"><img src="http://andrewpinion.com/img/cc3.jpg" width=200 height=150></a><br>
