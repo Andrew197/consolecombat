@@ -1,0 +1,38 @@
+------------------------------------------------------------------------------
+GAME TYPES
+------------------------------------------------------------------------------
+Ranked Games: create your own character, fight enemies, and level them up. The normal way to play
+Random game: instantly play as a randomly generated character against three other random enemies. This is the fastest way to get playing.
+
+------------------------------------------------------------------------------
+PLAYER STAT TYPES
+------------------------------------------------------------------------------
+
+HP (health points) - how much damage you can take before dying
+SP (stamina points) - you need stamina to perform actions. Attacking costs 2, defending costs 1, and you get +1 SP on every turn.
+
+STR (strength) - how strong you are. The higher this is, the more damage you can do.
+DEF (defense) - how resistant to damage you are. The higher this is, the less damage enemies can deal to you. If high enough, defense can completely absorb enemy attacks.
+
+SPD (speed) - how fast you are. the higher this is, the better you are at dodging enemy attacks.
+DEX (dexerity) - how accurate you are. The higher this is, the better you will be at hitting your target. 
+
+SUPER - once you earn 5 super points during a battle, you can use them to send a powerful super attack at your enemies and do up to six times as much damage as normal.
+
+
+------------------------------------------------------------------------------
+Battle Commands
+------------------------------------------------------------------------------
+Attack: attack one enemy. costs 2 SP to perform.
+Item: use an item, if you have one. Only get 1 per battle.
+Defend: double your defense for one turn to deal with powerful attacks.
+Rest: use this to regain SP when your SP gets too low.
+Super Attack: use a more powerful attack, but only if you have 5 super points
+
+------------------------------------------------------------------------------
+ENEMY AI OVERVIEW
+------------------------------------------------------------------------------
+
+Unknown CPU Player: this fighter will always offer a challenge on equal footing to the player's level, and will appear with one of many names. If multiple human players are in a battle, the Unknown CPU players will be at the same level as the strongest human participant.
+
+Standard CPU Players: ten CPU opponents of increasing difficulty to battle. Some will be undefeatable at first and will require leveling your character to overcome.
