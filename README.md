@@ -12,6 +12,6 @@ It also includes a stamina system and character fatigue. Over the course of a ba
 
 Enter the prompted numbers to navigate the menus and attack your enemies.
 
-<br><br><b>Disclaimer:</b> This code is getting old, and hasn't been updated in quite some time. One known bug is that if you use an item in a four player battle after player 3 has been KO'd, there is a chance that it will reduce everyone's health to 1. I will fix this as soon as I get time and revist this project a bit.<br><br>
+<br><br><b>Disclaimer:</b> This code is getting old, and hasn't been updated in quite some time. I will fix this as soon as I get time and revist this project a bit.<br><br>
 
 I will publish the source once I give it a bit of cleanup and better commenting to bring it up to my own standards.
