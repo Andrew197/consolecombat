@@ -1,4 +1,4 @@
-137
+139
 Actor
 Agent
 Alcoholic
@@ -137,3 +137,5 @@ Wall
 Wookiee
 Welder
 Waitress
+Zebra
+Zoologist
