@@ -1,4 +1,4 @@
-135
+137
 Actor
 Agent
 Alcoholic
@@ -8,21 +8,22 @@ Anchorman
 Android
 Animator
 Announcer
-Asian
+Astronomer
 Associate
 Attendant
 B. Fuddle
 Baconator
 Banker
 Barber
+Barista
 Bartender
 Biker
 Blacksmith
 Blogger
 Block
-Bob-omb
+Biologist
 Bone head
-Boudreaux
+Bee Keeper
 Bowler
 Broker
 Bureaucrat
@@ -34,7 +35,7 @@ Cashier
 Chef
 Clown
 Cone Head
-Cop
+cartographer
 Cranky
 Democrat
 Dentist
@@ -47,14 +48,14 @@ Dr. Doctor
 Driver
 Dumpington
 Editor
-Ed
+Electrician
 Engineer
 Ensign
 Executive
 Fanboy
 Fat cat
 Firefighter
-Fool
+Fisherman
 Gangster
 General
 Ghost
@@ -65,7 +66,7 @@ Governator
 Headhunter
 Hippie
 Hipster
-Hogzilla
+Herbalist
 Harvester
 Iron Chef
 Jouster
@@ -85,8 +86,8 @@ Mayor
 Mechanic
 Meteorologist
 Mexican
-Monkey Kong
-moron
+Master
+Miner
 Nerd
 New Yorker
 Nurse
@@ -100,12 +101,12 @@ Professor
 Programmer
 Quarterback
 Raider
-Reaper
+Refugee
 Redneck
 Republican
 Robot
 Rookie
-Sage
+Singer
 Salesman
 Scientist
 Scooter
@@ -119,6 +120,7 @@ Spectre
 Stocker
 Surgeon
 Tard
+TSA Agent
 Technician
 Telemarketer
 Tester
@@ -127,11 +129,11 @@ Thwomp
 Towel
 Troll
 Trucker
-Twerp
+Tailor
 Veteran
 Wanderer
-Wanker
+Worker
 Wall
 Wookiee
-WOrker
-Worker
+Welder
+Waitress
