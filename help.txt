@@ -8,19 +8,28 @@ Random game: instantly play as a randomly generated character against three othe
 PLAYER STAT TYPES
 ------------------------------------------------------------------------------
 HP (health points) - how much damage you cann withstand. If reduced to zero, you are knocked out of battle.
+INCREASES: When using Items
+DECREASES: When damage taken
 
-SP (stamina points) - you need stamina to perform actions. Attacking costs 2, defending costs 1.
-You get +1 SP on every turn, and +1 SP for dodging an enemy attack.
+SP (stamina points) - you need stamina to perform actions. 
+INCREASES: By resting or dodging attacks. +1 SP is given automatically per turn.
+DECREASES: by attacking (-2) defending(-1) and super attacking(-10)
 
 STR (strength) - how strong you are. The higher this is, the more damage you can do.
+INCREASES: <does not increase during battle>
+DECREASES: when hit by (and surviving) a super attack
 
-DEF (defense) - how resistant to damage you are. The higher this is, the less damage enemies can deal to you.
-If high enough, defense can completely absorb enemy attacks.
+DEF (defense) - how resistant to damage you are. The higher this is, the less damage enemies can deal to you. If high enough, defense can completely absorb enemy attacks.
+INCREASES: temporarily doubles while defending
+DECREASES: -1 for every successful damage absorption
 
 SPD (speed) - how fast you are. the higher this is, the better you are at dodging enemy attacks.
+INCREASES: <does not increase during battle>
+DECREASES: -1 for every successful dodge
 
 DEX (dexerity) - how accurate you are. The higher this is, the better you will be at hitting your target. 
-
+INCREASES: <does not increase during battle>
+DECREASES: low chance of -1 dex loss when attacking enemies.
 
 SUPER - once you earn 5 super points during a battle, you can use them to send a powerful super attack at your enemies and do up to six times as much damage as a standard attack.
 SUPER will always do a minimum of 48 damage (8 damage * 6) and cannot miss. Increasing DEF or defending is the only way to minimize its damage to your character.
@@ -31,7 +40,7 @@ Battle Commands
 Attack: attack one enemy. costs 2 SP to perform.
 Item: use an item, if you have one. Only get 1 per battle.
 Defend: double your defense for one turn. Good for dealing with super attacks.
-Rest: use this to regain SP when your SP gets too low.
+Rest: use this to regain SP when your SP gets too low. Be warned that you may lose some super charge in the process.
 Super Attack: use a more powerful attack, but only if you have 5 super points
 
 ------------------------------------------------------------------------------
