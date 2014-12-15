@@ -12,7 +12,7 @@ Astronomer
 Associate
 Attendant
 B. Fuddle
-Baconator
+Bacon
 Banker
 Barber
 Barista
@@ -46,7 +46,7 @@ Historian
 Donkey
 Dr. Doctor
 Driver
-Dumpington
+Dentist
 Editor
 Electrician
 Engineer
@@ -119,13 +119,13 @@ Specialist
 Spectre
 Stocker
 Surgeon
-Tard
+Trader
 TSA Agent
 Technician
 Telemarketer
 Tester
 Texan
-Thwomp
+Tailor
 Towel
 Troll
 Trucker
@@ -134,7 +134,7 @@ Veteran
 Wanderer
 Worker
 Wall
-Wookiee
+worker
 Welder
 Waitress
 Zebra
