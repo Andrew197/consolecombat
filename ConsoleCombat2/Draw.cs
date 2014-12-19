@@ -21,9 +21,7 @@ namespace ConsoleCombat2
         public static void playerManager()
         {
             Util.cls();
-            thirdLine();
-            writeLine("Player Manager");
-            thirdLine();
+            headersmall("Player Manager");
             writeLine();
             writeLine("1: Create New Player");
             writeLine("2: Rename Player");
@@ -35,26 +33,34 @@ namespace ConsoleCombat2
         {
             //draw playermanager screen
             Util.cls();
-            thirdLine();
-            writeLine("Choose A Save Slot");
-            thirdLine();
+            headersmall("Choose Save Slot");
             writeLine();
         }
 
         public static void playerManager_create_screen2()
         {
             Util.cls();
+            headersmall("Enter a Name");
+        }
+
+        public static void header(String title)
+        {
+            line();
+            writeLine(title);
+            line();
+        }
+
+        public static void headersmall(String title)
+        {
             thirdLine();
-            writeLine("Enter a name");
+            writeLine(title);
             thirdLine();
         }
 
         public static void updateStats(int refID)
         {
             Util.cls();
-            line();
-            writeLine("Update Stats");
-            line();
+            header("Update Stats");
             writeLine();
             //drawPlayerData(fileMgr.getPlayer(refID), -1);
             writeLine();
@@ -86,18 +92,14 @@ namespace ConsoleCombat2
         {
             Util.cls();
 
-            thirdLine();
-            writeLine("Ranked Games");
-            thirdLine();
+            headersmall("Ranked Games");
             writeLine("1: New Ranked Game");
             writeLine("2: Manage Players");
             writeLine("3: Rankings and Statistics");
 
             writeLine();
 
-            thirdLine();
-            writeLine("Quick Play");
-            thirdLine();
+            headersmall("Quick Play");
             writeLine("4: Generate Random Game");
 
             writeLine();
