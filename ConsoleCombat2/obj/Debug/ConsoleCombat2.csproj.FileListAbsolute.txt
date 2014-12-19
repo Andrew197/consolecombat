@@ -1,0 +1,6 @@
+C:\Users\Peetseys\MediaFire\Source Code\Programs C++\ConsoleCombat2\ConsoleCombat2\bin\Debug\ConsoleCombat2.exe.config
+C:\Users\Peetseys\MediaFire\Source Code\Programs C++\ConsoleCombat2\ConsoleCombat2\bin\Debug\ConsoleCombat2.exe
+C:\Users\Peetseys\MediaFire\Source Code\Programs C++\ConsoleCombat2\ConsoleCombat2\bin\Debug\ConsoleCombat2.pdb
+C:\Users\Peetseys\MediaFire\Source Code\Programs C++\ConsoleCombat2\ConsoleCombat2\obj\Debug\ConsoleCombat2.csprojResolveAssemblyReference.cache
+C:\Users\Peetseys\MediaFire\Source Code\Programs C++\ConsoleCombat2\ConsoleCombat2\obj\Debug\ConsoleCombat2.exe
+C:\Users\Peetseys\MediaFire\Source Code\Programs C++\ConsoleCombat2\ConsoleCombat2\obj\Debug\ConsoleCombat2.pdb
