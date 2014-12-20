@@ -25,6 +25,10 @@ namespace ConsoleCombat2
         Boolean defending;
         Boolean dodging;
         Boolean alive;
+        Boolean humanPlayer;
+
+        public Boolean isHuman() { return humanPlayer; }
+
 
         public String getName() { return name; }
         public int getStat(String stname)
@@ -97,7 +101,7 @@ namespace ConsoleCombat2
         }
 
         //Battle-Related Temporary Functions
-        void battlePrep()
+        public void battlePrep()
         {
             defending = false;
             dodging = false;

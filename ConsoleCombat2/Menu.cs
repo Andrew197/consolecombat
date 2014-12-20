@@ -8,24 +8,25 @@ namespace ConsoleCombat2
 {
     class MenuMgr
     {
-        fileManager fileMgr;
-
-        public MenuMgr(fileManager fm)
-        {
-            fileMgr = fm;   //needed so menus can access the game data
-        }
-
+        fileManager fileMgr;        //needed so menus can access the game data
+               
+        public MenuMgr(fileManager fm) { fileMgr = fm; } 
+ 
+        //get a string from the user, mostly for naming players.
         String getStringInput()
         {
             String line = Console.ReadLine();
             return line;
         }
 
+        //get numerical input for menus, with error checking.
         int getInput()
         {   
             String line = Console.ReadLine();
             String[] split = line.Split(' ');
             int result;
+
+            //if parsing as an int32 fails, its not a number - and theefore invalid input.
             try
             {
                 result = Int32.Parse(split[0]);
@@ -152,9 +153,7 @@ namespace ConsoleCombat2
         {
             //draw the header
             Util.cls();
-            Draw.line();
-            Draw.writeLine("Player Statistics");
-            Draw.line();
+            Draw.header("Player Statistics");
 
             //fetch data
             Player[] data = fileMgr.getAllPlayers();
