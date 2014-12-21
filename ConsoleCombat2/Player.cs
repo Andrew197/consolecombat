@@ -27,7 +27,36 @@ namespace ConsoleCombat2
         Boolean alive;
         Boolean humanPlayer;
 
+        public Boolean isAlive() { return alive; }
         public Boolean isHuman() { return humanPlayer; }
+        public Boolean isDefending() { return defending; }
+        public Boolean isDodging() { return dodging; }
+        
+        public void defend()
+        {
+            defending = true;
+            def *= 2;
+        }
+
+        public void dodge()
+        {
+            dodging = true;
+            spd *= 2;
+        }
+
+        public void undefend()
+        {
+            defending = false;
+            def /= 2;
+        }
+
+        public void undodge()
+        {
+            dodging = false;
+            spd /= 2;
+        }
+
+        public void setHuman(Boolean bo) { humanPlayer = bo; }
 
 
         public String getName() { return name; }
@@ -43,8 +72,44 @@ namespace ConsoleCombat2
                 case "dex": { return dex; break; }
                 case "level": { return level; break; }
                 case "statPts": { return statPts; break; }
+                case "super": { return superPts; break; }
+                default: throw new FormatException();
             }
             return -1;
+        }
+
+        public void damage(int ammount)
+        {
+            hp -= ammount;
+            if (hp <= 0) alive = false;
+        }
+
+        public void setStat(String stname, int newVal)
+        {
+            switch (stname)
+            {
+                case "hp": { hp = newVal; break; }
+                case "sp": { sp = newVal; break; }
+                case "str": { str = newVal; break; }
+                case "def": { def = newVal; break; }
+                case "spd": { spd = newVal; break; }
+                case "dex": { dex = newVal; break; }
+                default: throw new FormatException();
+            }
+        }
+
+        public void degradeStat(String stname, int qty)
+        {
+            switch (stname)
+            {
+                case "hp": { hp -= qty; break; }
+                case "sp": { sp -= qty; break; }
+                case "str": { str -= qty; break; }
+                case "def": { def -= qty; break; }
+                case "spd": { spd -= qty; break; }
+                case "dex": { dex -= qty; break; }
+                default: throw new FormatException();
+            }
         }
 
         //this function initializes a new player file.

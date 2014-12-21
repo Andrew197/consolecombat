@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Action.cs" />
     <Compile Include="Battle.cs" />
     <Compile Include="fileManager.cs" />
     <Compile Include="Menu.cs" />
