@@ -1,7 +1,7 @@
 consolecombat
 =============
 
-Turn based rpgbattle system gamewith procedurally generated enemies, AI, and multiplayer<br>
+Turn based rpg battle system game with procedurally generated enemies, AI, and multiplayer<br>
 <a href="http://andrewpinion.com/img/cc1b.jpg"><img src="http://andrewpinion.com/img/cc1.jpg" width=200 height=150></a>
 <a href="http://andrewpinion.com/img/cc2b.jpg"><img src="http://andrewpinion.com/img/cc2.jpg" width=200 height=150></a>
 <a href="http://andrewpinion.com/img/cc3b.jpg"><img src="http://andrewpinion.com/img/cc3.jpg" width=200 height=150></a><br>
@@ -12,4 +12,4 @@ It also includes a stamina system and character fatigue. Over the course of a ba
 
 Enter the prompted numbers to navigate the menus and attack your enemies.
 
-<br><br><b>Disclaimer:</b> This code is getting old, and hasn't been updated in quite some time. I will rewrite this as soon as I get time and revist this project a bit.<br><br>
+<br><br><b>Disclaimer:</b> This code is getting old, and hasn't been updated in quite some time. I am currently in the process of rewriting this code in the /ConsoleCombat2 directory.<br><br>
