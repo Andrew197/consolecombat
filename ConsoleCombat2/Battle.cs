@@ -56,6 +56,9 @@ namespace ConsoleCombat2
             //either the player or the cpu must choose an action
             Action act;
 
+            //array of message ID's to display after a turn's action has happened.
+            int[] messages;
+
             do
             {
                 //if this player is alive, take its turn. if not, skip this block.
@@ -70,12 +73,19 @@ namespace ConsoleCombat2
                     else act = cpuTurn();
 
                     doBattleAction(act);
+
+                    
+                    //check for KO or win conditions
+                    //devaluation of stats should happen inside the action handlers, NOT here.
+
+                    //redraw screen
+                    //display messages
                 }
+                changeTurn();
             }
             while (1 == 1);
-            //
-
-            changeTurn();
+            
+            //end of battle code
         }
 
         //action enumerations
@@ -236,7 +246,12 @@ namespace ConsoleCombat2
 
         private Action playerTurn()
         {
-            //MENU CONTROL
+            //MENU CONTROL SHOULD BE IMPLEMENTED INSIDE THIS FUNCTION
+            //passing data values on the state of the battle to Draw might work.
+
+            //create a null action, for now.
+            //parameter notes. first is the action type/id, second is user, third is target
+            //need to implement the select a target menu before this area will work.
             Action act = new Action(-1,-1,-1);
             return act;
         }
@@ -252,7 +267,6 @@ namespace ConsoleCombat2
         //in the future, a dumber classic ai may be included.
         private Action cpuTurn()
         {
-            Action act = new Action(-1,-1,-1);
             //AI LOGIC
 
             //super attack
@@ -260,14 +274,45 @@ namespace ConsoleCombat2
             if (players[activeUser].getStat("super") == 5)
             {
                 //super attack
+                //need choose target logic for this.
             }
 
-            //dodge
-            //if any player has full super, don't consider dodging.
-            //if def > speed, defend instead
+            //dodge only if the user's speed is greater than def.
+            if (players[activeUser].getStat("def") < players[activeUser].getStat("spd"))
+            {
+                //if any player has full super, don't consider dodging.
+                Boolean shouldDodge = true;
+                for (int i = 0; i < players.Length; i++)
+                {
+                    if (players[i].getStat("super") == 5)
+                    {
+                        //super attacks cannot be dodged, so don't bother trying.
+                        shouldDodge = false;
+                    }  
+                }
+                if (shouldDodge)
+                {
+                    //do a dodge: id 4, user = activeUser, target = null
+                    return new Action(4, activeUser, -1);
+                }
+            }
 
             //defend
             //if any player has full super, consider defending.
+            Boolean shouldDefend = false;
+            for (int i = 0; i < players.Length; i++)
+            {
+                if (players[i].getStat("super") == 5)
+                {
+                    //super attacks cannot be dodged, so don't bother trying.
+                    shouldDefend = true;
+                }
+            }
+            if (shouldDefend)
+            {
+                //75% chance of dodging if someone can super
+                if (util.randint(4) > 1) return new Action(3, activeUser, -1);
+            }
 
             //use item
             //maybe only do this on a higher difficulty.
@@ -277,7 +322,7 @@ namespace ConsoleCombat2
 
             //standard attack
             //should be the last option considered.
-            return act;
+            return null;
         }
 
         private void changeTurn()

@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 namespace ConsoleCombat2
 {
     //this class wraps up data about battle actions in a convenient container.
+    //data inside an Action is immutable once created.
+
     class Action
     {
         int id;
