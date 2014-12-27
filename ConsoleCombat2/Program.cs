@@ -13,7 +13,7 @@ namespace ConsoleCombat2
 
         static void Main(string[] args)
         {
-            //run the main program
+            //instantiate and run the main program
             Program prog = new Program();
             prog.Start();
         }
@@ -33,8 +33,7 @@ namespace ConsoleCombat2
         void init()
         {
             fileMgr = new fileManager();
-            menus = new MenuMgr(fileMgr);
-            
+            menus = new MenuMgr(fileMgr);          
         }
     }
 }

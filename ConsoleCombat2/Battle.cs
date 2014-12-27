@@ -26,7 +26,7 @@ namespace ConsoleCombat2
         }
 
         //this is a random battle. I will implement random battles first.
-        public Battle(String [] names, int statPnts, String mode)
+        public Battle(String[] names, int statPnts, String mode)
         {
             util = new Util();
             //create the players
@@ -40,6 +40,7 @@ namespace ConsoleCombat2
 
             activeUser = 0;
             //run the battle. not ready yet.
+            mainloop();
         }
 
         public void start()
@@ -50,20 +51,21 @@ namespace ConsoleCombat2
         public void mainloop()
         {
             //draw battle header
+            Draw.battleHeader(players);
 
             //either the player or the cpu must choose an action
             Action act;
 
             do
             {
-                //if this player is dead, skip its turn.
+                //if this player is alive, take its turn. if not, skip this block.
                 if (players[activeUser].isAlive())
                 {
                     //status effects reset when it is your turn.
                     if (players[activeUser].isDefending()) players[activeUser].undefend();
                     if (players[activeUser].isDodging()) players[activeUser].undodge();
 
-                    //decide if a selection menu is needed or not.
+                    //decide if a selection menu is needed or if AI is needed.
                     if (players[activeUser].isHuman()) act = playerTurn();
                     else act = cpuTurn();
 
@@ -76,6 +78,13 @@ namespace ConsoleCombat2
             changeTurn();
         }
 
+        //action enumerations
+        //1: attack
+        //2: item
+        //3: Defend
+        //4: dodge
+        //5: super attack OR rest (cannot do a SUPER if no SP now)
+
         void doBattleAction(Action act)
         {
             int damage;
@@ -84,6 +93,20 @@ namespace ConsoleCombat2
                 case 1:
                     damage = attack(act.getUser(), act.getTarget());
                     break;
+                case 2:
+                    item();
+                    players[act.getUser()].useItem();
+                    break;
+                case 3:
+                    players[act.getUser()].defend();
+                    break;
+                case 4:
+                    players[act.getUser()].dodge();
+                    break;
+                case 5:
+                    superAttack(act.getUser(), act.getTarget());
+                    break;
+
             }
         }
 

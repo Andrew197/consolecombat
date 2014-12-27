@@ -26,12 +26,16 @@ namespace ConsoleCombat2
         Boolean dodging;
         Boolean alive;
         Boolean humanPlayer;
+        Boolean item;
 
         public Boolean isAlive() { return alive; }
         public Boolean isHuman() { return humanPlayer; }
         public Boolean isDefending() { return defending; }
         public Boolean isDodging() { return dodging; }
-        
+
+        public Boolean hasItem() { return item; }
+        public void useItem() { item = false; }
+
         public void defend()
         {
             defending = true;
@@ -172,6 +176,7 @@ namespace ConsoleCombat2
             dodging = false;
             alive = true;
             superPts = 0;
+            item = true;
         }
     }
 }

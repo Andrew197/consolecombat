@@ -167,8 +167,6 @@ namespace ConsoleCombat2
                 getInput();
             return "main";
         }
-
-
     }
 }
 

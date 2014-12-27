@@ -88,6 +88,21 @@ namespace ConsoleCombat2
                        + " EXP:" + String.Format("{0,2:D}", pl.getStat("statPts")));
             else write(i + " " + String.Format("{0,10:D}", pl.getName()));
         }
+
+        public static void playerData(Player pl)
+        {
+            write("\n");
+            write(String.Format("{0,14:D}", pl.getName())
+               + " HP:" + String.Format("{0,4:D}", pl.getStat("hp"))
+               + " SP:" + String.Format("{0,3:D}", pl.getStat("sp"))
+               + " STR:" + String.Format("{0,3:D}", pl.getStat("str"))
+               + " DEF:" + String.Format("{0,3:D}", pl.getStat("def"))
+               + " SPD:" + String.Format("{0,3:D}", pl.getStat("spd"))
+               + " DEX:" + String.Format("{0,3:D}", pl.getStat("dex"))
+               + "  LEVEL:" + String.Format("{0,2:D}", pl.getStat("level"))
+               + " EXP:" + String.Format("{0,2:D}", pl.getStat("statPts")));
+        }
+
         public static void mainMenu()
         {
             Util.cls();
@@ -105,6 +120,16 @@ namespace ConsoleCombat2
             writeLine();
 
             writeLine("5: Exit Game");
+        }
+
+        public static void battleHeader(Player[] pls)
+        {
+            line();
+            for(int i=0;i<pls.Length;i++)
+            {
+                playerData(pls[i]);
+            }
+
         }
     }
 }
